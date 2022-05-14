@@ -1,0 +1,71 @@
+/* pages/detail-vedio/index.wxss */
+page{
+  padding-top: 225px;
+}
+.video{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.video-name{
+  font-weight: 700;
+  margin-top: 18rpx;
+  text-shadow: 2rpx 2rpx 2rpx #ccc;
+  font-size: 32rpx;
+  margin-left: 16rpx;
+}
+.video-detail{
+  margin-top: 14rpx;
+  font-size: 24rpx;
+  color: #626262;
+  margin-left: 16rpx;
+}
+.relate-title{
+  font-weight:700;
+  font-size: 29rpx;
+  margin-top: 40rpx;
+  text-shadow: 0rpx 0rpx 1rpx #ccc;
+  margin-bottom: 20rpx;
+  margin-left: 16rpx;
+}
+
+.related-video{
+  display: flex;
+  margin-bottom: 6rpx;
+  padding: 10rpx;
+}
+.related-image{
+  position: relative;
+  width: 240rpx;
+  height: 140rpx;
+}
+.related-image image{
+  width: 240rpx;
+  height: 140rpx;
+  border-radius: 12rpx;
+
+} 
+.related-image .counter{
+  position: absolute;
+  bottom: 6rpx;
+  right: 13rpx;
+  font-size: 26rpx;
+  color: white;
+  z-index: 9;
+  text-shadow: 0 0 1px #ccc;
+}
+.related-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 15rpx;
+}
+.related-info .title{
+  font-weight: 700;
+  font-size: 28rpx;
+}
+.related-info .author{
+  font-size: 22rpx;
+  text-shadow: 0 0 1px #ccc;
+}

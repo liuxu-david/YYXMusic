@@ -1,0 +1,51 @@
+/* pages/detail-search/index.wxss */
+page{
+  padding:0 20rpx;
+  padding-top: 56px;
+}
+.search{
+  position: fixed;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+}
+.keywords{
+  display: flex;
+  flex-wrap: wrap;
+}
+.keywords .tag{
+  font-size: 26rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  padding: 10rpx 10rpx;
+  /* border:1px solid #00b26a; */
+  background-color: #fff;
+  border-radius: 16rpx;
+}
+.keywords .tag:first-of-type{
+  color:#00b26a;
+}
+.suggest .title{
+  font-weight: 700;
+  color:#00b26a;
+  font-size: 34rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.item .icon{
+  width: 66rpx;
+  margin-left: -20rpx;
+}
+.item .text{
+  font-size: 28rpx;
+}
+
+.result .title{
+  font-size: 32rpx;
+  color:#00b26a ;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}

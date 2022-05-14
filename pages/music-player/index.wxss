@@ -1,0 +1,115 @@
+/* pages/music-player/index.wxss */
+page{
+  color:white 
+}
+.bg-image,.bg-cover{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.bg-cover{
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(30px);
+}
+
+/* 自定义样式 */
+.tab{
+  display: flex;
+  color: #999;
+  font-size: 28rpx;
+}
+.tab .divider{
+  margin: 0 10rpx;
+}
+.tab .active{
+  color: #fff;
+}
+/* 内容样式 */
+.content .music{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rpx 60rpx;
+  box-sizing: border-box;
+}
+.album{
+  display: flex;
+  flex: 4;
+}
+.album .image{
+  width: 100%;
+  height: 100%;
+  border-radius: 12rpx;
+}
+.info{
+  margin: 20rpx 0;
+}
+.info .title{
+  font-size: 48rpx;
+  font-weight: 700;
+}
+.subtitle .singer,.subtitle .alias{
+  font-style: 26rpx;
+  color: #ccc;
+  margin: 16rpx 0;
+}
+.music .lyrics{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #00b26a;
+  font-weight: 700;
+}
+.progress{
+  margin: 10rpx 0;
+}
+.progress .slider{
+  margin: 0 0 18rpx 20rpx;
+}
+.time{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22rpx;
+  color: #ccc;
+}
+.time .current{
+  margin-left: 10rpx;
+}
+.operation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0 60rpx;
+}
+.operation .btn{
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+}
+.lyric-list{
+  height: 100%;
+  overflow: hidden;
+}
+::-webkit-scrollbar{
+ width: 0;
+ height: 0;
+ color: transparent;
+}
+.item{
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 28rpx;
+  color: #989898;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.lyric-list .active{
+  color: #00b26a;
+  font-size: 36rpx;
+}

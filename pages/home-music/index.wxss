@@ -1,0 +1,68 @@
+/* pages/home-music/index.wxss */
+page{
+  padding: 0 20rpx;
+}
+.swiper{
+  border-radius: 12rpx;
+  overflow: hidden;
+  transform: translateY(0);
+}
+.swiper-item{
+  display: flex;
+} 
+.swiper-item .swiper-image{
+  width: 100%;
+}
+/* 播放工具栏 */
+.play-bar-placeholder{
+  height: 44px;
+}
+.play-bar{
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  background-color: #f3f3f3;
+  padding: 0 8px;
+  z-index: 9;
+  justify-content: space-between;
+  box-shadow: 0 -1px 5px rgba(0, 0,0,0.3);
+}
+.play-bar .left,.play-bar .right{
+  display: flex;
+  align-items: center;
+}
+.play-bar .album{
+  position: relative;
+  top: -8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.play-bar .name{
+  font-size: 14px;
+}
+.play-bar .icon{
+  width: 30px;
+  height: 30px;
+}
+.play-bar .play{
+  width: 25px;
+  height: 25px;
+  margin-right: 10rpx;
+}
+/* album动画 */
+
+@keyframes albumRotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.album-anim{
+  animation: albumRotate 16s linear infinite;
+} 

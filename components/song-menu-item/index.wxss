@@ -1,0 +1,29 @@
+/* components/song-menu-item/index.wxss */
+.item{
+  width: 100%;
+}
+.top{
+  position: relative;
+}
+.top .image{
+  width: 100%;
+  background-size:cover;
+  border-radius: 12rpx;
+}
+.top .play-counter{
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  font-size: small;
+  color: white;
+}
+.bottom{
+  white-space: normal;
+  height: 60rpx;
+  line-height: 30rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  font-style:黑体;
+  text-shadow: 0 0 1rpx black;
+  margin-top: 10rpx;
+}

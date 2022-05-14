@@ -1,0 +1,90 @@
+/* components/song-detail-header/index.wxss */
+.header{
+  width: 100vw;
+  position: relative;
+  left: -20rpx;
+  height: 450rpx;
+  margin-bottom: 35rpx;
+}
+.header .bg-image{
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 25rpx; */
+  z-index: -1;
+}
+.header .bg-cover{
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25rpx;
+  /* background-color:rgba(0,0,0,.5); */
+  backdrop-filter:blur(5px);
+}
+.content{
+  position: relative;
+  display: flex;
+  z-index: 9;
+  padding: 50rpx;
+}
+
+.content .image{
+  width: 220rpx;
+  height: 220rpx;
+  border-radius: 16rpx;
+  margin-right: 30rpx;
+}
+.content .info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 220rpx;
+  color: white;
+  font-style: 黑体;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.info .title{
+  font-style: 30rpx;
+  font-weight: 500;
+}
+.author{
+  display: flex;
+  margin: 20rpx 0;
+  align-items: center;
+}
+.author .avatar{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  margin-right: 15rpx;
+}
+.desc{
+  display: inline-block;
+  width: 100%;
+  font-size: 26rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.operation{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.operation .icon{
+  width: 48rpx;
+}
+.like,
+.share{
+  display: flex;
+}
+.operation .text{
+  color: white;
+  font-style: 28rpx;
+  margin-left: 15rpx;
+}

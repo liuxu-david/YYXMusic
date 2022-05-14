@@ -1,0 +1,49 @@
+/* components/vedio-item-v1/index.wxss */
+.item{
+  width: 100%;
+  margin-bottom: 18rpx;
+}
+.imageShow{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.imageShow image{
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.info{
+  color: white;
+}
+.info .count{
+  position: absolute;
+  left: 15rpx;
+  bottom: 14rpx;
+  font-size: 20rpx;
+}
+/* .count::before{
+  content:'';
+  position: absolute;
+  top: 0rpx;
+  left: -34rpx;
+  display: block;
+  width: 30rpx;
+  height: 24rpx;
+  background-image: url(../../assets/images/admin/count.png);
+} */
+.info .duration{
+  position: absolute;
+  right: 10rpx;
+  bottom: 14rpx;
+  font-size: 20rpx;
+
+}
+.content{
+  font-weight: 500; 
+  font-size: 28rpx;
+  text-shadow: 2rpx 2rpx 2rpx #ccc;
+ white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

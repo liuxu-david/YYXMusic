@@ -1,0 +1,11 @@
+<!--components/song-menu-area/index.wxml-->
+<scroll-view scroll-x class="menu-list">
+  <block wx:for="{{songMenu}}" wx:key="id">
+  <view class="menu-item">
+  <!-- 开始封装小的组件然后把每个item传递过去 -->
+    <song-menu-item item="{{item}}" 
+                    bindtap="handleMenuItemClick"
+                    data-item="{{item}}"></song-menu-item>
+  </view>
+  </block>
+</scroll-view>

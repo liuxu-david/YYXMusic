@@ -1,0 +1,32 @@
+<!--pages/detail-vedio/index.wxml-->
+<wxs src='../../utils/format.wxs' module="format"></wxs>
+<video class="video"
+       src="{{mvURLInfo.url}}"
+       referrer-policy="origin"
+       autoplay>
+</video>
+
+<!-- 视频详情介绍 -->
+<view>
+<view class="video-name">{{mvDetail.name}}</view>
+<view class="video-detail">
+  <view>{{mvDetail.artistName}}  -</view>
+  <view>{{format.formatCount(mvDetail.playCount)}}次播放 - {{mvDetail.publishTime}}</view>
+</view>
+</view>
+<!-- 推荐视频 -->
+<view class="relate-title">推荐视频</view>
+<view wx:for="{{relatedVideos}}" wx:key="index" class="allrelate-video">
+  <view class="related-video">
+  <!-- 图片布局 -->
+  <view class="related-image">
+    <image src="{{item.coverUrl}}"></image>
+    <view class="counter">{{format.formatCount(item.playTime)}}</view>
+  </view>
+   <!-- 介绍布局 -->
+    <view class="related-info">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.creator[0].userName}}</view>
+    </view>
+  </view>
+</view>
