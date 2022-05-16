@@ -116,7 +116,9 @@ const playerStore=new HYEventStore({
       if(ctx.isStoping&&ctx.isStoping){
         audioContext.src=`https://music.163.com/song/media/outer/url?id=${ctx.id}.mp3`;
         audioContext.title=ctx.currentSong.name;
-        audioContext.autoplay=true;
+        // audioContext.autoplay=true;
+        audioContext.startTime=ctx.currentTime/1000;
+        ctx.isStoping=false
       }
       ctx.isPlaying?audioContext.play():audioContext.pause()
     },

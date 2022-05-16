@@ -1,0 +1,6 @@
+<!--pages/home-profile/index.wxml-->
+<view class="userinfo">
+  <image class="image" src="{{userInfo.avatarUrl}}" mode="widthFix "></image>
+  <view class="name">{{userInfo.nickName}}</view>
+</view>
+<button open-type="getUserInfo" bindtap="handleGetUser" type="primary">登陆</button>

@@ -6,35 +6,43 @@
   background-color: #ebebeb;
   margin-bottom: 20rpx;
   border-radius: 15rpx;
+  overflow: hidden;
 }
 .left{
   display: flex;
-  flex-direction:column;
   flex:1;
+  flex-direction:column;
   justify-content: space-around;
   padding-left: 20rpx;
+  height: 100%;
+  overflow: hidden;
 }
 .left .title{
   font-weight: 700;
   font-size: 38rpx;
+  margin: 10rpx;
 }
 .left .author{
   color: #999;
-  font-size: 24rpx;
+  font-size: 20rpx;
   text-shadow: 0 0 1rpx black;
 }
-/* .left .text{ */
-  /* overflow: hidden;
-  /* white-space: nowrap; */
-  /* width: 100%; */
-  /* text-overflow: ellipsis; */ 
-/* } */
+.left .text{
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 69rpx;
+  font-size: 26rpx;
+}
 .right{
   position: relative;
 }
 .right .image{
-  width: 240rpx;
-  height: 240rpx;
+  display: block;
+  width: 280rpx;
+  height: 280rpx;
   border-radius:0 16rpx 16rpx 0 ;
 }
 .right .counter{
